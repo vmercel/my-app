@@ -7,7 +7,6 @@ import { createStackNavigator } from '@react-navigation/stack';
 import Login from './components/login';
 import Signup from './components/signup';
 import Dashboard from './components/dashboard';
-import Logout from './components/logout';
 
 const Stack = createStackNavigator();
 
@@ -43,8 +42,7 @@ function MyStack() {
        component={Dashboard} 
        options={
          { title: 'Dashboard' },
-         {headerLeft: null} ,
-         {headerShown: false}
+         {headerLeft: null} 
        }
       />
     </Stack.Navigator>
